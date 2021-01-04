@@ -10,3 +10,85 @@ light blue background: #E6ECF4;
 clear button: #DE4841;
 clear button disabled: #D0CDCD
 */
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+input {
+    color: #2B4E80;
+}
+
+h1 {
+    font-family: 'Life Savers', serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    height: 32px;
+    border: 0;
+    border-radius: 0;
+    margin: 2.5%;
+    text-align: center;
+}
+
+input,
+.submit,
+.clear {
+    font-size: large;
+}
+
+.submit {
+    background-color: #2B4E80;
+}
+
+.submit,
+.clear {
+    color: white;
+}
+
+input,
+.submit {
+    width: 90%;
+}
+
+button {
+    border: 0;
+    padding: 10px;
+}
+
+.clear {
+    background-color: #DE4841;
+    position: absolute;
+    bottom: 15px;
+    left: 81%;
+}
+
+.ballContainer {
+    width: 30%;
+    height: 400px;
+    position: relative;
+    background-color: #E6ECF4;
+}
+
+.woody {
+    max-height: 400px;
+    margin: 0 150px;
+}
+
+.eightBall {
+    size: 5%;
+    align-items: center;
+}
+
+.answerField {
+    background-image: url('/assets/eight-ball.png');
+    background-repeat: no-repeat;
+}
