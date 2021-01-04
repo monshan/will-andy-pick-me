@@ -39,6 +39,19 @@ input {
     text-align: center;
 }
 
+p {
+    font-size: x-large;
+    margin: 0;
+}
+
+.question {
+    font-style: italic;
+}
+
+.answer {
+    font-weight: bolder;
+}
+
 input,
 .submit,
 .clear {
@@ -76,6 +89,16 @@ button {
     height: 400px;
     position: relative;
     background-color: #E6ECF4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eightBall {
+    background-image: url(/assets/eight-ball.png);
+    background-position: center;
+    background-size: 100px;
+    background-repeat: no-repeat; 
 }
 
 .woody {
@@ -83,12 +106,12 @@ button {
     margin: 0 150px;
 }
 
-.eightBall {
-    size: 5%;
+.answerField {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.answerField {
-    background-image: url('/assets/eight-ball.png');
-    background-repeat: no-repeat;
+.hidden {
+    display: none;
 }
