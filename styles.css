@@ -115,3 +115,15 @@ button {
 .hidden {
     display: none;
 }
+
+.submitHover {
+    background-color: #1C3455;
+}
+
+.submitDisable {
+ background-color: #607AA0;
+}
+
+.clearDisable {
+    background-color: #D0CDCD;
+}

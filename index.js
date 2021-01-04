@@ -6,7 +6,10 @@ var clearBtn = document.querySelector('.clear')
 var answerField = document.querySelector('.answerField')
 var ballContainer = document.querySelector('#container')
 
+userQuestion.addEventListener("keydown", activate)
 submitBtn.addEventListener("click", display)
+submitBtn.addEventListener("mouseover", colorChange)
+submitBtn.addEventListener("mouseout", colorChange)
 clearBtn.addEventListener("click", clearField)
 
 var answers = ["It is certain.", 
@@ -36,6 +39,7 @@ function display() {
         displayQuestion.innerHTML = `"${userQuestion.value}"`
         displayAnswer.innerHTML = selectAnswer()
         userQuestion.value = ''
+        clearBtn.classList.toggle('clearDisable')
     } else {
         alert `Please ask a question first!`
     }
@@ -50,5 +54,14 @@ function clearField() {
         displayQuestion.innerHTML = ""
         displayAnswer.innerHTML = ""
         ballContainer.classList.add('eightBall')
+        clearBtn.classList.toggle('clearDisable')
     }
+}
+
+function colorChange() {
+    submitBtn.classList.toggle('submitHover')
+}
+
+function activate() {
+    submitBtn.classList.add('submitDisable')
 }
